@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react'
 import {
   BrowserRouter as Router,
   Link,
   Redirect,
   Route,
-  Switch
-} from "react-router-dom";
+  Switch,
+} from 'react-router-dom'
 
-import { Navigation } from "./components/common";
-import pageRegistry from "./pageRegistry";
+import { Navigation } from './components/common'
+import pageRegistry from './pageRegistry'
 
-const pages = [pageRegistry.green, pageRegistry.blue, pageRegistry.skyBlue];
+const pages = [pageRegistry.green, pageRegistry.blue, pageRegistry.skyBlue]
 
 const pageNavigationDefault = [
   {
-    path: "/",
-    name: "Home Page"
+    path: '/',
+    name: 'Home Page',
   },
   ...pages.map(page => ({
     path: page.path,
-    name: page.name
-  }))
-];
+    name: page.name,
+  })),
+]
 
 const renderSiteNavigation = (
   props,
@@ -34,7 +34,7 @@ const renderSiteNavigation = (
       </Link>
     ))}
   </Navigation>
-);
+)
 
 const App = () => {
   return (
@@ -43,7 +43,7 @@ const App = () => {
         <Route exact path="/">
           <Redirect
             to={{
-              pathname: pageRegistry.green.path
+              pathname: pageRegistry.green.path,
             }}
           />
         </Route>
@@ -54,7 +54,7 @@ const App = () => {
         ))}
       </Switch>
     </Router>
-  );
-};
+  )
+}
 
-export default App;
+export default App
