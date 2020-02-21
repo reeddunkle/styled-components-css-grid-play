@@ -41,9 +41,7 @@ const Layout = styled.div`
 `;
 
 const Header = styled(HeaderBase)`
-  ${media.small} {
-    background-color: ${theme.colors.bluegray};
-  }
+  font-family: Roboto;
 `;
 
 const Green = ({ renderNav }) => {

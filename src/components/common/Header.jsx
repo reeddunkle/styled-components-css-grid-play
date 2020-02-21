@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { media, theme } from '../../styles';
 
+const H = {
+  'background-color': theme.colors.lightblue,
+};
+
 const Header = styled.header`
   background-color: ${theme.colors.lightblue};
   font-size: 40px;

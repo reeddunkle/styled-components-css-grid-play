@@ -1,6 +1,6 @@
 {
   "extends": ["plugin:prettier/recommended"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react-hooks"],
   "parserOptions": {
     "ecmaVersion": 10,
     "sourceType": "module",
@@ -9,6 +9,24 @@
     }
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "warn",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "after-used",
+        "argsIgnorePattern": "^_$",
+        "ignoreRestSiblings": true,
+        "vars": "all",
+        "varsIgnorePattern": "^_$"
+      }
+    ],
+    "sort-imports": [
+      "error",
+      { "ignoreCase": true, "ignoreDeclarationSort": true }
+    ],
+    "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": true }],
+    "react/jsx-sort-props": ["error", { "ignoreCase": true }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
