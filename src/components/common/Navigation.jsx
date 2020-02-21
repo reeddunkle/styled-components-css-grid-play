@@ -5,10 +5,7 @@ import { media } from '../../styles';
 
 const NavLayout = styled.nav`
   grid-area: ${props => props.gridArea};
-
-  & > * {
-    background-color: #afc88a;
-  }
+  background-color: #afc88a;
 `;
 
 const NavList = styled.ul`
