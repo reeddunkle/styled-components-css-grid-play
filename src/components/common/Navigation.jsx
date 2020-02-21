@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { media } from "../../styles";
+import { media } from '../../styles';
 
 const NavLayout = styled.nav`
   grid-area: ${props => props.gridArea};

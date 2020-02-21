@@ -1,16 +1,16 @@
-import React from "react";
-import { Navigation } from "../common";
-import pageRegistry from "../pageRegistry";
+import React from 'react';
+import { Navigation } from '../common';
+import pageRegistry from '../pageRegistry';
 
 const pageNavigation = [
   {
-    path: "/",
-    name: "Home Page"
+    path: '/',
+    name: 'Home Page',
   },
   ...pages.map(page => ({
     path: page.path,
-    name: page.name
-  }))
+    name: page.name,
+  })),
 ];
 
 const Nav = () => {

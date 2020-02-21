@@ -1,5 +1,5 @@
-import { startCase } from "lodash";
-import { Blue, Green, SkyBlue } from "./components/pages";
+import { startCase } from 'lodash';
+import { Blue, Green, SkyBlue } from './components/pages';
 
 const makePagePath = ({ name }) => {
   return `/${name.toLowerCase()}`;
@@ -8,13 +8,13 @@ const makePagePath = ({ name }) => {
 const createPage = Component => ({
   component: Component,
   name: `${startCase(Component.name)} Page`,
-  path: makePagePath(Component)
+  path: makePagePath(Component),
 });
 
 const pages = {
   blue: createPage(Blue),
   green: createPage(Green),
-  skyBlue: createPage(SkyBlue)
+  skyBlue: createPage(SkyBlue),
 };
 
 export default pages;
