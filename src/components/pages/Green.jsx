@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { media, theme } from '../../styles';
 import { Aside, Footer, Header as HeaderBase, Section } from '../common';
 
