@@ -7,7 +7,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import { Navigation } from './components/common';
+import { Navigation } from '../common';
 import pageRegistry from './pageRegistry';
 
 const pages = [pageRegistry.green, pageRegistry.blue, pageRegistry.skyBlue];
