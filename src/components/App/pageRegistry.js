@@ -1,5 +1,5 @@
 import { startCase } from 'lodash';
-import { Blue, Green, SkyBlue } from './components/pages';
+import { Blue, Green, SkyBlue } from '../pages';
 
 const makePagePath = ({ name }) => {
   return `/${name.toLowerCase()}`;

@@ -1,13 +1,12 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Link,
   Redirect,
   Route,
   Switch,
 } from 'react-router-dom';
-
-import { Navigation } from '../common';
+import GlobalStyles from './GlobalStyles';
+import { Link, Navigation } from '../common';
 import pageRegistry from './pageRegistry';
 
 const pages = [pageRegistry.green, pageRegistry.blue, pageRegistry.skyBlue];
@@ -47,11 +46,14 @@ const App = () => {
             }}
           />
         </Route>
-        {pages.map(({ component: Component, name, path }) => (
-          <Route key={name} path={path}>
-            <Component renderNav={renderSiteNavigation} />
-          </Route>
-        ))}
+        <>
+          <GlobalStyles />
+          {pages.map(({ component: Component, name, path }) => (
+            <Route key={name} path={path}>
+              <Component renderNav={renderSiteNavigation} />
+            </Route>
+          ))}
+        </>
       </Switch>
     </Router>
   );

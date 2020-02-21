@@ -19,7 +19,6 @@ const Layout = styled.div`
     --blue: #3a789e;
     background-color: var(--blue);
     border: 1px solid black;
-    font-family: Roboto;
     text-align: center;
   }
 

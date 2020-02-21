@@ -18,7 +18,6 @@ const Layout = styled.div`
   & > * {
     background-color: mediumseagreen;
     border: 1px solid black;
-    font-family: Roboto;
     text-align: center;
   }
 

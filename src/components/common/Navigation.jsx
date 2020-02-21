@@ -27,15 +27,7 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
-  --black-800: #242729;
-  color: var(--black-800);
-  font: inherit;
-  font-size: 100%;
-  list-style: none;
   margin: 5px;
-  vertical-align: baseline;
-  padding: 0;
-  box-sizing: border-box;
 `;
 
 const Navigation = ({ children, ...props }) => {
