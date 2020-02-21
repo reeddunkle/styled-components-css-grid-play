@@ -16,7 +16,7 @@ const Layout = styled.div`
     'footer';
 
   & > * {
-    background-color: mediumseagreen;
+    /* background-color: mediumseagreen; */
     border: 1px solid black;
     text-align: center;
   }
