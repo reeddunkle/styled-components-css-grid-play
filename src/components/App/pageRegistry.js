@@ -1,4 +1,5 @@
 import { startCase } from 'lodash';
+
 import { Blue, Green, SkyBlue } from '../pages';
 
 const makePagePath = ({ name }) => {

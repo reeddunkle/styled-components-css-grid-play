@@ -1,12 +1,13 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Redirect,
   Route,
+  BrowserRouter as Router,
   Switch,
 } from 'react-router-dom';
-import GlobalStyles from './GlobalStyles';
+
 import { Link, Navigation } from '../common';
+import GlobalStyles from './GlobalStyles';
 import pageRegistry from './pageRegistry';
 
 const pages = [pageRegistry.green, pageRegistry.blue, pageRegistry.skyBlue];

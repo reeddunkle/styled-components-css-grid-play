@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys */
+
 const theme = {
   breakpoints: {
     xsmall: 0,

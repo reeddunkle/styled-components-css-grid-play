@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { media } from '../../styles';
 import { Aside, Footer, Header, Section } from '../common';
 
@@ -21,7 +22,7 @@ const Layout = styled.div`
     text-align: center;
   }
 
-  ${media.small} {
+  ${media.atLeast('small')} {
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
       'header  header'
@@ -30,7 +31,7 @@ const Layout = styled.div`
       'aside-2 footer';
   }
 
-  ${media.medium} {
+  ${media.atLeast('medium')} {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       'header header header'

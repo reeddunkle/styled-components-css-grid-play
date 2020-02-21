@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { media, theme } from '../../styles';
+import { media } from '../../styles';
 import { Aside, Footer, Header as HeaderBase, Section } from '../common';
 
 const Layout = styled.div`
@@ -22,7 +22,7 @@ const Layout = styled.div`
     text-align: center;
   }
 
-  ${media.small} {
+  ${media.atLeast('small')} {
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
       'header   header'
@@ -31,7 +31,7 @@ const Layout = styled.div`
       'aside-2  footer';
   }
 
-  ${media.medium} {
+  ${media.atLeast('medium')} {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       'header header  header'
@@ -43,6 +43,10 @@ const Layout = styled.div`
 
 const Header = styled(HeaderBase)`
   font-family: Roboto;
+
+  ${media.only('small')} {
+    background-color: black;
+  }
 `;
 
 const Green = ({ renderNav }) => {
