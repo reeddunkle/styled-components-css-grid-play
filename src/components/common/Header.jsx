@@ -1,23 +1,23 @@
 import styled from 'styled-components';
-import { media } from '../../styles';
+import { media, theme } from '../../styles';
 
 const Header = styled.header`
-  background-color: #9dc4cc;
+  background-color: ${theme.colors.lightblue};
   font-size: 40px;
   grid-area: ${props => props.gridArea};
 
   ${media.small} {
-    background-color: #a3874b;
+    background-color: ${theme.colors.tan};
     font-size: 50px;
   }
 
   ${media.medium} {
-    background-color: #d1b5a9;
+    background-color: ${theme.colors.lightred};
     font-size: 65px;
   }
 
   ${media.large} {
-    background-color: #d1a9c0;
+    background-color: ${theme.colors.rose};
     font-size: 80px;
   }
 `;

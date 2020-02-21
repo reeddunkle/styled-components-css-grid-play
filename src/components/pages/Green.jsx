@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { media } from '../../styles';
-import { Aside, Footer, Header, Section } from '../common';
+import { media, theme } from '../../styles';
+import { Aside, Footer, Header as HeaderBase, Section } from '../common';
 
 const Layout = styled.div`
   box-sizing: border-box;
@@ -37,6 +37,12 @@ const Layout = styled.div`
       'nav    section aside-1'
       'nav    section aside-2'
       'footer footer  footer';
+  }
+`;
+
+const Header = styled(HeaderBase)`
+  ${media.small} {
+    background-color: ${theme.colors.bluegray};
   }
 `;
 
