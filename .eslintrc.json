@@ -1,6 +1,10 @@
 {
-  "extends": ["plugin:prettier/recommended"],
-  "plugins": ["prettier", "react-hooks"],
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "plugins": [
+    "prettier",
+    "eslint-plugin-import-order-alphabetical",
+    "react-hooks"
+  ],
   "parserOptions": {
     "ecmaVersion": 10,
     "sourceType": "module",
@@ -10,6 +14,17 @@
   },
   "rules": {
     "prettier/prettier": "warn",
+    "import-order-alphabetical/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          ["parent", "sibling", "index"]
+        ],
+        "newlines-between": "always"
+      }
+    ],
     "no-unused-vars": [
       "error",
       {
@@ -25,7 +40,6 @@
       { "ignoreCase": true, "ignoreDeclarationSort": true }
     ],
     "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": true }],
-    "react/jsx-sort-props": ["error", { "ignoreCase": true }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   }
