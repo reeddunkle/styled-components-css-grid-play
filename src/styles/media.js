@@ -19,8 +19,7 @@ for (let index = 0; index < ascBreakpointPairs.length; index += 1) {
 }
 
 const only = breakpointName => {
-  console.log('breakpointName', breakpointName);
-  const [minWidth, maxWidth] = breakpointBounds[breakpointName] ?? [];
+  const [minWidth, maxWidth] = breakpointBounds[breakpointName];
 
   return `@media (min-width: ${minWidth / 16}em) and (max-width: ${maxWidth /
     16}em)`;

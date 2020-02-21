@@ -23,7 +23,7 @@ const Layout = styled.div`
     text-align: center;
   }
 
-  ${media.atLeast('small')} {
+  ${media.atLeast('largeMobile')} {
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
       'header  header'
@@ -32,7 +32,7 @@ const Layout = styled.div`
       'aside-2 footer';
   }
 
-  ${media.atLeast('medium')} {
+  ${media.atLeast('tablet')} {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       'header header header'

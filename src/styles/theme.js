@@ -2,10 +2,10 @@
 
 const theme = {
   breakpoints: {
-    xsmall: 0,
-    small: 540,
-    medium: 768,
-    large: 1080,
+    mobile: 0,
+    largeMobile: 540,
+    tablet: 768,
+    desktop: 1080,
   },
   colors: {
     bluegray: '#79808c',

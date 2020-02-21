@@ -7,17 +7,17 @@ const Header = styled.header`
   font-size: 40px;
   grid-area: ${props => props.gridArea};
 
-  ${media.atLeast('small')} {
+  ${media.atLeast('largeMobile')} {
     background-color: ${theme.colors.tan};
     font-size: 50px;
   }
 
-  ${media.atLeast('medium')} {
+  ${media.atLeast('tablet')} {
     background-color: ${theme.colors.lightred};
     font-size: 65px;
   }
 
-  ${media.atLeast('large')} {
+  ${media.atLeast('desktop')} {
     background-color: ${theme.colors.rose};
     font-size: 80px;
   }

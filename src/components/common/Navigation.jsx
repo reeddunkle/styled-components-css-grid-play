@@ -13,12 +13,12 @@ const NavList = styled.ul`
   margin: 0;
   padding: 0;
 
-  ${media.atLeast('small')} {
+  ${media.atLeast('largeMobile')} {
     display: flex;
     justify-content: space-between;
   }
 
-  ${media.atLeast('medium')} {
+  ${media.atLeast('tablet')} {
     flex-direction: column;
   }
 `;
