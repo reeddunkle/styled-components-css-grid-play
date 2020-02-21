@@ -14,12 +14,12 @@ const pages = [pageRegistry.green, pageRegistry.blue, pageRegistry.skyBlue];
 
 const pageNavigationDefault = [
   {
-    path: '/',
     name: 'Home Page',
+    path: '/',
   },
   ...pages.map(page => ({
-    path: page.path,
     name: page.name,
+    path: page.path,
   })),
 ];
 
